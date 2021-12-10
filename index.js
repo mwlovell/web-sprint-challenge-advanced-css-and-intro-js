@@ -231,9 +231,9 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 
 
 
-function getArtistByIndex(array, number) {
+function getArtistByIndex(array, num) {
   
-  // return `the artist at index ${artists().id} is ${artists().name}`;
+  return `the artist at index ${array[num].id} is ${array[num].name}`;
  }
 
  
