@@ -309,11 +309,12 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array, id, name, years, genre, nationality, bio) {
-  {array.push(id, name, years, genre, nationality, bio);
+  {array.push(id, name, years, genre, nationality, bio);}
  
-}
+
 return array
 }
+
  
 // console.log(addArtist(artist(20, 'Mike Lovell,', '1982-current day, ', 'Web Design,', 'white', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat'))
 
@@ -325,15 +326,23 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  const newArray = []
+   for(let i = 0; i < array.length; i++){
+     if(array[i].paintings > 100 ) {
+       return newArray
+     }}
 }
-
-
-/* ***** END OF TASKS ***** */
-
-
-
+    // function findRegion(region, array){
+    //   const newArray = [];
+    //   for(let i = 0; i < array.length; i++){
+    //     if(array[i].region.includes(region)){
+    //       newArray.push(array[i].city);
+    //     }
+    //   }
+    //   return newArray;
+    // }
+    console.log(lotsOfArt(artists))
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
 function foo() {
   console.log('its working');
