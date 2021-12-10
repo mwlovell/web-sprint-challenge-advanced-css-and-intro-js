@@ -229,10 +229,15 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*array, number*/) {
-  /*return `the artist at index ${array.id} is ${array.name}`*/
- }
+
+
+function getArtistByIndex(array, number) {
   
+  // return `the artist at index ${artists().id} is ${artists().name}`;
+ }
+
+ 
+  // console.log(getArtistByIndex(artists(0))
  /*console.log(getArtistByIndex())*/
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -254,7 +259,7 @@ function get20s(array) {
   return newArray;
 }
 
-console.log(get20s(artists));
+console.log(get20s(artists))
 
 
 
@@ -267,11 +272,26 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array,num) {
+  
+  
+  array.splice(num, 1)
+  return array.length
+//   const newArray = [];
+//   for(let i = 0; i < array.length; i++){
+//       if(array.id === id){
+//        newArray.splice(id, 1)
+//   }
+    
+// return newArray.length
+// }
+
 }
 
+  
 
+  // .map()
+  // return array.map(item => item[key]);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
