@@ -329,12 +329,16 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array) {
   const newArray = []
    for(let i = 0; i < array.length; i++){
-     if(array[i].paintings > 99 ) {
-     return newArray
-
+     if(array[i].paintings >= 100){
+       newArray.push(array[i].name)
+      
      }
-   }
-  }
+      
+    }
+    return newArray 
+}
+
+
     // function findRegion(region, array){
     //   const newArray = [];
     //   for(let i = 0; i < array.length; i++){
